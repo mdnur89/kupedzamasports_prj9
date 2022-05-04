@@ -26,10 +26,10 @@
         let teams = await response.json()
 
         for (let i = 0; teams.length > i; i++) {
-            let room = teams[i]
+            let team = teams[i]
 
             let row = `<div>
-                            <h3>${room.name}</h3>
+                            <h3>${team.name}</h3>
                         </div>`
 
             teamsContainer.innerHTML += row
