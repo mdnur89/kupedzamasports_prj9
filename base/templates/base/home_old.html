@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<style>
+    .home-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+</style>
+
+
+<div class="home-container">
+
+    <div>
+        {% include 'base/projects_component.html' %}
+    </div>
+
+    <div>
+        <h5>{{team_count}} teams available</h5>
+        <a href="{% url 'create-team' %}">Create Team</a>
+
+        {% include 'base/feed_component.html' %}
+
+    </div>
+
+
+    <div>
+        {% include 'base/activity_component.html' %}
+    </div>
+
+
+
+</div>
+
+{% endblock content %}
