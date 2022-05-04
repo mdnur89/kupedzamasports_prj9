@@ -17,3 +17,5 @@ After environment activation, run the below to start the app:
 >$ python manage.py makemigrations
  $ python manage.py migrate
  $ python manage.py runserver
+
+NOTE THAT BUILD IS FAILING A PASS BUT RUNS
